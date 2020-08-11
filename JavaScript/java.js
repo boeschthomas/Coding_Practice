@@ -10,3 +10,16 @@ console.log(users[0].name);
 for (var i = 0; i < users.length; i++){
     console.log(users[i].name, "-", users[i].age);
 }
+
+
+var numPurchase = 0;
+for (var donut in glazedDonuts){
+  console.log(glazedDonuts[donut].type);
+  if((glazedDonuts[donut].age < 25 && glazedDonuts[donut].time == 'minutes') || glazedDonuts[donut].time == 'seconds'){
+    numPurchase++;
+  }
+  else {
+    console.log('not this donut...');
+   }
+}
+console.log(numPurchase);
